@@ -3,7 +3,7 @@ development:
   database: my_test
   host: localhost
   username: root
-  password: root
+  password: root 
 test:
   adapter: mysql
   database: login_test
