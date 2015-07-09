@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc96168d-b0db-4363-8781-7325174474ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/angular.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/browsersync.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/gulp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/jasmine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/karma.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/protractor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/yeoman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/partials/project.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/app.css" afterPath="$PROJECT_DIR$/app/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="$PROJECT_DIR$/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/controllers.js" afterPath="$PROJECT_DIR$/app/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="resource_center.iws" />
     <ignored path=".idea/workspace.xml" />
