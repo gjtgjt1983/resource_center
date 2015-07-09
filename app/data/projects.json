@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "name": "super_app",
+      "desc": "很牛逼的project， 这次我们要搞个很牛逼的项目!!!!!!",
+      "logo": "karma.png"
+    },
+    {
+      "name": "super_app2",
+      "desc": "2222很牛逼的project， 这次我们要搞个很牛逼的项目!!!!!!",
+      "logo": "yeoman.png"
+    }
+  ]
+}
