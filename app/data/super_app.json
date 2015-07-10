@@ -1,12 +1,1 @@
-{
-  "v1": {
-    "index.html": "index.html",
-    "images": {
-      "gulp.png": "gulp.png",
-      "angular.png": "angular.png"
-    },
-    "css": {
-      "main.css": "main.css"
-    }
-  }
-}
+{"v1" : {"css" : {"main.css" : "main.css"}, "images" : {"angular.png" : "angular.png", "gulp.png" : "gulp.png"}, "index.html" : "index.html"}}

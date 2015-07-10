@@ -2,12 +2,19 @@
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
-        <div class="col-lg-4" ng-repeat="project in projects">
-            <img width="140" height="140" alt="Generic placeholder image" ng-src="img/{{project.logo}}" class="img-circle">
-            <h2>{{project.name}}</h2>
-            <p>{{project.desc}}</p>
-            <p><a role="button" href="#/projects/{{project.name}}" class="btn btn-default">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+        <div class="col-lg-12">
+            <div ng-repeat="project in projects" style="display: inline;float:left;;margin: 10px;">
+                <img width="140" height="140" alt="{{project.name}}" ng-src="img/{{project.logo}}" class="img-circle">
+
+                <h2>{{project.name}}</h2>
+
+                <p>{{project.desc}}</p>
+
+                <p><a role="button" href="#/projects/{{project.name}}" class="btn btn-default">View details »</a></p>
+            </div>
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
 
 </div>

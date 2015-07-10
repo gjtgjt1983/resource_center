@@ -9,7 +9,7 @@ resouceCenterControllers.controller('ProjectsListCtrl', ['$scope', '$http', func
 
 }]);
 
-resouceCenterControllers.controller('ProjectDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+resouceCenterControllers.controller('ProjectDetailCtrl', ['$scope', '$http', '$routeParams', '$location', function ($scope, $http, $routeParams, $location) {
     $scope.project_name = $routeParams.project_name;
     $scope.prefix = $routeParams.prefix;
     $http.get('data/' + $scope.project_name + '.json').success(function (data) {
@@ -48,6 +48,10 @@ resouceCenterControllers.controller('ProjectDetailCtrl', ['$scope', '$http', '$r
             $("#file").load(_url, function (data) {
                 $(this).html(data);
             })
+            if(_url.match(/(htm|html)$/i)){
+                $('#preview a').attr('href', 'http://' + $location.host() + _url);
+                $('#preview').show();
+            }
         }
 
         if($scope.file_type == 'img'){
