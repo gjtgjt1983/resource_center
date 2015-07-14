@@ -6,6 +6,7 @@ Find.find("../app/data/projects/") do |filename|
 	filename.gsub!('../app/data/projects/', '')
 	dirs = filename.split('/')
 	dirs.delete('')
+	puts filename
 
 	#项目名称
     project_name = nil
@@ -25,7 +26,7 @@ Find.find("../app/data/projects/") do |filename|
 		file.puts json.to_s.gsub('=>', ' : ')
 		file.close
 	end
-	if(dirs.size > 2)
+	if(dirs.size > 1)
         project_name = dirs.first
         dirs = dirs[1, dirs.size-1]
         if File.exist?('../app/data/'+ project_name +'.json')
@@ -40,6 +41,7 @@ Find.find("../app/data/projects/") do |filename|
             file.close
             content = ""
         end
+
 
         if(content != "")
             json = JSON.parse content
