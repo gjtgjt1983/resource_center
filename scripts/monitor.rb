@@ -28,12 +28,18 @@ Find.find("../app/data/projects/") do |filename|
 	if(dirs.size > 2)
         project_name = dirs.first
         dirs = dirs[1, dirs.size-1]
-        file = File.open('../app/data/'+ project_name +'.json', 'r')
-        content = ""
-        file.readlines.each do |line|
-            content += line.chomp
+        if File.exist?('../app/data/'+ project_name +'.json')
+            file = File.open('../app/data/'+ project_name +'.json', 'r')
+            content = ""
+            file.readlines.each do |line|
+                content += line.chomp
+            end
+            file.close
+        else
+            file = File.new('../app/data/'+ project_name +'.json', 'w')
+            file.close
+            content = ""
         end
-        file.close
 
         if(content != "")
             json = JSON.parse content
